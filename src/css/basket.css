@@ -1,0 +1,295 @@
+/* Обнуление стилей */
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+header a{
+    color: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Header */
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D7D7D7;
+}
+
+.header__container{
+    width: 100%;
+}
+
+.header__container, .header__menu, .menu__list, .menu__icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__icon{
+    margin-right: 15px;
+}
+
+.menu__link{
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+.header__logo img{
+    width: 40px;
+}
+.basket__icon{
+    width: 50px;
+}
+.basket__icon:hover *{
+    fill: #777777;
+}
+
+.delete__icon:hover *{
+    fill: #777777;
+}
+
+/* Basket */
+
+.basket-form{
+    display: flex;
+}
+
+.basket__card{
+    border-radius: 20px;
+    border: 1px solid #D7D7D7;
+    padding: 25px 33px;
+    width: 700px;
+    margin: 0 20px 20px 0;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+
+.card__title{
+    margin-bottom: 10px;
+}
+
+.card__buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card__like, .card__delete, .card__edit{
+    margin-right: 10px;
+}
+
+.card__manufacturer{
+    display: flex;
+    align-items: center;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+}
+
+.card__type{
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.main-block{
+    margin-top: 80px;
+}
+
+.main-block__title{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.card__title{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.name{
+    margin-right: 15px;
+}
+
+.payment, .empty__card{
+    border-radius: 20px;
+    border: 1px solid #D7D7D7;
+    padding: 25px 33px;
+    width: 800px;
+    height: 220px;
+    margin: 0 20px 20px 0;
+    background: white;
+}
+.empty__card{
+    height: auto;
+}
+
+.total, .shipment, .subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__header, .empty__header{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.subtotal, .shipment{
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.total{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.payment__button, .empty__button{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background: #FF7A00;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: white;
+}
+
+.payment__button:hover, .empty__button:hover{
+    background: #ea7400;
+}
+
+.card__img{
+    width: 150px;
+    height: 160px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card__img img{
+    width: 100%;
+    object-fit: fill
+}
+
+.card__vertical{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card__price{
+    margin-right: 15px;
+}
+
+.quantity-changer {
+    display: flex;
+    align-items: center;
+}
+
+.decrease, .increase {
+    background-color: white;
+    padding: 5px 10px;
+    font-size: large;
+    color: inherit;
+    border-radius: 10px;
+}
+
+.decrease:hover, .increase:hover{
+    background-color: #e8e8e8;
+}
+
+.quality {
+    text-align: center;
+    width: 30px;
+}

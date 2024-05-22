@@ -1,0 +1,114 @@
+/* Room switcher */
+.room-switcher {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 330px;
+    height: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffe8d4;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.switchers{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Chat container */
+.chat-container {
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    border-radius: 5px;
+    height: 330px;
+    box-sizing: border-box;
+}
+
+/* Input field and send button */
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background: #ffb662;
+    padding: 5px;
+}
+
+.input-wrapper input {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+/* Message bubbles */
+.message {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    line-height: 1.4;
+    position: relative;
+    background: #f1ede9;
+}
+
+/* Messages */
+.messages {
+    font-size: 12px;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.switcers{
+    margin-bottom: 5px;
+}
+
+.switcers button {
+    background: #fafafa;
+    height: 40px;
+    border-radius: 5px;
+    padding: 7px 10px;
+    width: 24%;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.switcers button:hover{
+    background: #f1f1f1;
+}
+
+.switcers button:not(:last-child){
+    margin-right: 4px;
+}
+
+.switcers button.active {
+    background: #FF7A00;
+    color: white;
+}
+
+.switcers button.active:hover {
+    background: #ea7400;
+}
+
+.send-button{
+    background: #FF7A00;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+.send-button:hover{
+    background: #ea7400;
+}
